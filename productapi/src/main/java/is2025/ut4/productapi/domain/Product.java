@@ -33,7 +33,7 @@ public class Product {
     public double getTax() { return tax; }
 
     public double FinalPrice(){
-        finalPrice = price + (price * tax / 100);
+        finalPrice = price * (1 + tax);
         return finalPrice;
     }
 
